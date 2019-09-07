@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 1000 -T 0 -C 0.01 -D 0.05 -U 1.0 -M 0.04 -S -1.0 -c -1
+Relation:     knockknock
+Instances:    57
+Attributes:   162
+              [list of attributes omitted]
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.04 (2 instances)
+Minimum metric <confidence>: 0.01
+Number of cycles performed: 20
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 23
+
+Size of set of large itemsets L(2): 11
+
+Size of set of large itemsets L(3): 2
+
+Best rules found:
+
+  1. us=t 4 ==> open=t 4    <conf:(1)> lift:(4.38) lev:(0.05) [3] conv:(3.09)
+  2. us=t 4 ==> adore=t 4    <conf:(1)> lift:(9.5) lev:(0.06) [3] conv:(3.58)
+  3. adore=t us=t 4 ==> open=t 4    <conf:(1)> lift:(4.38) lev:(0.05) [3] conv:(3.09)
+  4. open=t us=t 4 ==> adore=t 4    <conf:(1)> lift:(9.5) lev:(0.06) [3] conv:(3.58)
+  5. us=t 4 ==> open=t adore=t 4    <conf:(1)> lift:(11.4) lev:(0.06) [3] conv:(3.65)
+  6. it=t 3 ==> is=t 3    <conf:(1)> lift:(14.25) lev:(0.05) [2] conv:(2.79)
+  7. broken=t 2 ==> is=t 2    <conf:(1)> lift:(14.25) lev:(0.03) [1] conv:(1.86)
+  8. could=t 2 ==> little=t 2    <conf:(1)> lift:(19) lev:(0.03) [1] conv:(1.89)
+  9. opened=t 2 ==> door=t 2    <conf:(1)> lift:(4.75) lev:(0.03) [1] conv:(1.58)
+ 10. please=t 2 ==> door=t 2    <conf:(1)> lift:(4.75) lev:(0.03) [1] conv:(1.58)
+ 11. please=t 2 ==> open=t 2    <conf:(1)> lift:(4.38) lev:(0.03) [1] conv:(1.54)
+ 12. questions=t 2 ==> asking=t 2    <conf:(1)> lift:(28.5) lev:(0.03) [1] conv:(1.93)
+ 13. asking=t 2 ==> questions=t 2    <conf:(1)> lift:(28.5) lev:(0.03) [1] conv:(1.93)
+ 14. open=t please=t 2 ==> door=t 2    <conf:(1)> lift:(4.75) lev:(0.03) [1] conv:(1.58)
+ 15. door=t please=t 2 ==> open=t 2    <conf:(1)> lift:(4.38) lev:(0.03) [1] conv:(1.54)
+ 16. please=t 2 ==> door=t open=t 2    <conf:(1)> lift:(8.14) lev:(0.03) [1] conv:(1.75)
+ 17. adore=t 6 ==> open=t 5    <conf:(0.83)> lift:(3.65) lev:(0.06) [3] conv:(2.32)
+ 18. open=t adore=t 5 ==> us=t 4    <conf:(0.8)> lift:(11.4) lev:(0.06) [3] conv:(2.32)
+ 19. is=t 4 ==> it=t 3    <conf:(0.75)> lift:(14.25) lev:(0.05) [2] conv:(1.89)
+ 20. adore=t 6 ==> us=t 4    <conf:(0.67)> lift:(9.5) lev:(0.06) [3] conv:(1.86)
+ 21. adore=t 6 ==> open=t us=t 4    <conf:(0.67)> lift:(9.5) lev:(0.06) [3] conv:(1.86)
+ 22. little=t 3 ==> could=t 2    <conf:(0.67)> lift:(19) lev:(0.03) [1] conv:(1.45)
+ 23. door=t 12 ==> open=t 7    <conf:(0.58)> lift:(2.56) lev:(0.07) [4] conv:(1.54)
+ 24. open=t 13 ==> door=t 7    <conf:(0.54)> lift:(2.56) lev:(0.07) [4] conv:(1.47)
+ 25. is=t 4 ==> broken=t 2    <conf:(0.5)> lift:(14.25) lev:(0.03) [1] conv:(1.29)
+ 26. open=t 13 ==> adore=t 5    <conf:(0.38)> lift:(3.65) lev:(0.06) [3] conv:(1.29)
+ 27. open=t 13 ==> us=t 4    <conf:(0.31)> lift:(4.38) lev:(0.05) [3] conv:(1.21)
+ 28. open=t 13 ==> adore=t us=t 4    <conf:(0.31)> lift:(4.38) lev:(0.05) [3] conv:(1.21)
+ 29. door=t open=t 7 ==> please=t 2    <conf:(0.29)> lift:(8.14) lev:(0.03) [1] conv:(1.13)
+ 30. door=t 12 ==> opened=t 2    <conf:(0.17)> lift:(4.75) lev:(0.03) [1] conv:(1.05)
+ 31. door=t 12 ==> please=t 2    <conf:(0.17)> lift:(4.75) lev:(0.03) [1] conv:(1.05)
+ 32. door=t 12 ==> open=t please=t 2    <conf:(0.17)> lift:(4.75) lev:(0.03) [1] conv:(1.05)
+ 33. open=t 13 ==> please=t 2    <conf:(0.15)> lift:(4.38) lev:(0.03) [1] conv:(1.05)
+ 34. open=t 13 ==> door=t please=t 2    <conf:(0.15)> lift:(4.38) lev:(0.03) [1] conv:(1.05)

@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 50 -T 0 -C 0.1 -D 0.05 -U 1.0 -M 0.04 -S -1.0 -c -1
+Relation:     knockknock
+Instances:    59
+Attributes:   163
+              [list of attributes omitted]
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.04 (2 instances)
+Minimum metric <confidence>: 0.1
+Number of cycles performed: 20
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 26
+
+Size of set of large itemsets L(2): 16
+
+Size of set of large itemsets L(3): 3
+
+Best rules found:
+
+ 1. us=t 4 ==> open=t 4    <conf:(1)> lift:(4.54) lev:(0.05) [3] conv:(3.12)
+ 2. us=t 4 ==> adore=t 4    <conf:(1)> lift:(9.83) lev:(0.06) [3] conv:(3.59)
+ 3. adore=t us=t 4 ==> open=t 4    <conf:(1)> lift:(4.54) lev:(0.05) [3] conv:(3.12)
+ 4. open=t us=t 4 ==> adore=t 4    <conf:(1)> lift:(9.83) lev:(0.06) [3] conv:(3.59)
+ 5. us=t 4 ==> open=t adore=t 4    <conf:(1)> lift:(11.8) lev:(0.06) [3] conv:(3.66)
+ 6. it=t 3 ==> is=t 3    <conf:(1)> lift:(14.75) lev:(0.05) [2] conv:(2.8)
+ 7. santa=t 3 ==> little=t 3    <conf:(1)> lift:(11.8) lev:(0.05) [2] conv:(2.75)
+ 8. broken=t 2 ==> is=t 2    <conf:(1)> lift:(14.75) lev:(0.03) [1] conv:(1.86)
+ 9. could=t 2 ==> little=t 2    <conf:(1)> lift:(11.8) lev:(0.03) [1] conv:(1.83)
+10. opened=t 2 ==> door=t 2    <conf:(1)> lift:(4.92) lev:(0.03) [1] conv:(1.59)
+11. please=t 2 ==> door=t 2    <conf:(1)> lift:(4.92) lev:(0.03) [1] conv:(1.59)
+12. iran=t 2 ==> tell=t 2    <conf:(1)> lift:(19.67) lev:(0.03) [1] conv:(1.9)
+13. please=t 2 ==> open=t 2    <conf:(1)> lift:(4.54) lev:(0.03) [1] conv:(1.56)
+14. questions=t 2 ==> asking=t 2    <conf:(1)> lift:(29.5) lev:(0.03) [1] conv:(1.93)
+15. asking=t 2 ==> questions=t 2    <conf:(1)> lift:(29.5) lev:(0.03) [1] conv:(1.93)
+16. know=t little=t 2 ==> santa=t 2    <conf:(1)> lift:(19.67) lev:(0.03) [1] conv:(1.9)
+17. know=t santa=t 2 ==> little=t 2    <conf:(1)> lift:(11.8) lev:(0.03) [1] conv:(1.83)
+18. open=t please=t 2 ==> door=t 2    <conf:(1)> lift:(4.92) lev:(0.03) [1] conv:(1.59)
+19. door=t please=t 2 ==> open=t 2    <conf:(1)> lift:(4.54) lev:(0.03) [1] conv:(1.56)
+20. please=t 2 ==> door=t open=t 2    <conf:(1)> lift:(8.43) lev:(0.03) [1] conv:(1.76)
+21. adore=t 6 ==> open=t 5    <conf:(0.83)> lift:(3.78) lev:(0.06) [3] conv:(2.34)
+22. open=t adore=t 5 ==> us=t 4    <conf:(0.8)> lift:(11.8) lev:(0.06) [3] conv:(2.33)
+23. is=t 4 ==> it=t 3    <conf:(0.75)> lift:(14.75) lev:(0.05) [2] conv:(1.9)
+24. adore=t 6 ==> us=t 4    <conf:(0.67)> lift:(9.83) lev:(0.06) [3] conv:(1.86)
+25. adore=t 6 ==> open=t us=t 4    <conf:(0.67)> lift:(9.83) lev:(0.06) [3] conv:(1.86)
+26. santa=t 3 ==> know=t 2    <conf:(0.67)> lift:(13.11) lev:(0.03) [1] conv:(1.42)
+27. know=t 3 ==> santa=t 2    <conf:(0.67)> lift:(13.11) lev:(0.03) [1] conv:(1.42)
+28. know=t 3 ==> little=t 2    <conf:(0.67)> lift:(7.87) lev:(0.03) [1] conv:(1.37)
+29. tell=t 3 ==> little=t 2    <conf:(0.67)> lift:(7.87) lev:(0.03) [1] conv:(1.37)
+30. tell=t 3 ==> iran=t 2    <conf:(0.67)> lift:(19.67) lev:(0.03) [1] conv:(1.45)
+31. santa=t little=t 3 ==> know=t 2    <conf:(0.67)> lift:(13.11) lev:(0.03) [1] conv:(1.42)
+32. santa=t 3 ==> know=t little=t 2    <conf:(0.67)> lift:(19.67) lev:(0.03) [1] conv:(1.45)
+33. know=t 3 ==> santa=t little=t 2    <conf:(0.67)> lift:(13.11) lev:(0.03) [1] conv:(1.42)
+34. little=t 5 ==> santa=t 3    <conf:(0.6)> lift:(11.8) lev:(0.05) [2] conv:(1.58)
+35. door=t 12 ==> open=t 7    <conf:(0.58)> lift:(2.65) lev:(0.07) [4] conv:(1.56)
+36. open=t 13 ==> door=t 7    <conf:(0.54)> lift:(2.65) lev:(0.07) [4] conv:(1.48)
+37. is=t 4 ==> broken=t 2    <conf:(0.5)> lift:(14.75) lev:(0.03) [1] conv:(1.29)
+38. little=t 5 ==> know=t 2    <conf:(0.4)> lift:(7.87) lev:(0.03) [1] conv:(1.19)
+39. little=t 5 ==> could=t 2    <conf:(0.4)> lift:(11.8) lev:(0.03) [1] conv:(1.21)
+40. little=t 5 ==> tell=t 2    <conf:(0.4)> lift:(7.87) lev:(0.03) [1] conv:(1.19)
+41. little=t 5 ==> know=t santa=t 2    <conf:(0.4)> lift:(11.8) lev:(0.03) [1] conv:(1.21)
+42. open=t 13 ==> adore=t 5    <conf:(0.38)> lift:(3.78) lev:(0.06) [3] conv:(1.3)
+43. open=t 13 ==> us=t 4    <conf:(0.31)> lift:(4.54) lev:(0.05) [3] conv:(1.21)
+44. open=t 13 ==> adore=t us=t 4    <conf:(0.31)> lift:(4.54) lev:(0.05) [3] conv:(1.21)
+45. door=t open=t 7 ==> please=t 2    <conf:(0.29)> lift:(8.43) lev:(0.03) [1] conv:(1.13)
+46. door=t 12 ==> opened=t 2    <conf:(0.17)> lift:(4.92) lev:(0.03) [1] conv:(1.05)
+47. door=t 12 ==> please=t 2    <conf:(0.17)> lift:(4.92) lev:(0.03) [1] conv:(1.05)
+48. door=t 12 ==> open=t please=t 2    <conf:(0.17)> lift:(4.92) lev:(0.03) [1] conv:(1.05)
+49. open=t 13 ==> please=t 2    <conf:(0.15)> lift:(4.54) lev:(0.03) [1] conv:(1.05)
+50. open=t 13 ==> door=t please=t 2    <conf:(0.15)> lift:(4.54) lev:(0.03) [1] conv:(1.05)
